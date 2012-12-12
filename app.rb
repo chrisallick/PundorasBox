@@ -17,6 +17,10 @@ end
 get %r{/([\w]+)} do
     word = params[:captures].first
 
+    if $redis.get(word) == nil
+        $redis.set(word, word.capitalize)
+    end
+
     puns = []
     $redis.lrange("puns:#{word}", 0, $redis.llen("puns:#{word}") ).each do |pun|
         puns.push( JSON.parse( pun ) )
