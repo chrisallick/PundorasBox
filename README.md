@@ -1,6 +1,3 @@
-goblin
-======
+Pundora's Box
 
-note taking with code highlighting
-
-http://goblin.herokuapp.com/
+Just for goofs.
