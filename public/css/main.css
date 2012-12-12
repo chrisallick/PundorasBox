@@ -1,0 +1,21 @@
+html, body { width: 100%; height: 100%; }
+body { font: normal 14px Helvetica; }
+
+img { display: block; }
+
+#punplace { width: 400px; margin: 0 auto; padding-top: 100px; }
+#punplace h1 { text-align: center; font: bold 72px Helvetica; margin-bottom: 40px; }
+
+form { margin-bottom: 40px; text-align: right; position: relative; }
+#entry { border: 1px solid grey; height: 30px; font-size: 20px; width: 100%; margin-bottom: 10px; padding-left: 10px; border-radius: 3px; }
+#submit { border: 1px solid grey; background: white; padding: 5px 10px; border-radius: 3px; }
+#error { width: 330px; display: block; float: left; text-align: left; padding-top: 4px; font: bold 11px Helvetica; color: red; }
+#loading { position: absolute; top: 8px; left: -32px; width: 20px; display: none; }
+
+#examples { padding-left: 30px; }
+#examples p { margin-bottom: 15px; font-size: 16px; }
+
+.clear:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clear {display: inline-block;}
+* html .clear {height: 1%;}
+.clear {display: block;}

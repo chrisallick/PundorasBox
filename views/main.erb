@@ -1,0 +1,16 @@
+<div id="wrapper">
+	<div id="punplace">
+		<h1><%= word %></h1>
+		<form class="clear">
+			<input id="entry" type="text" placeholder="Enter..." />
+			<span id="error"></span>
+			<input id="submit" type="submit" value="Submit" />
+			<img id="loading" src="img/loading.gif" />
+		</form>
+		<div id="examples">
+			<% puns.each do |pun| %>
+				<p><%= pun["display"] %></p>
+			<% end %>
+		</div>
+	</div>
+</div>
